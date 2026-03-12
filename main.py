@@ -270,4 +270,5 @@ if __name__ == "__main__":
         save    = not args.no_save,
         display = not args.no_display,
     )
+
     pipeline.run()
