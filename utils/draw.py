@@ -116,4 +116,5 @@ def draw_alert_banner(frame: np.ndarray, pilot_id: int, gadget: str) -> None:
     cv2.addWeighted(overlay, 0.6, frame, 0.4, 0, frame)
 
     msg = f"  !! CRITICAL - Pilot {pilot_id} using {gadget} !!"
+
     put_text(frame, msg, (8, h - 10), (255, 255, 255), scale=0.58, thick=1)
